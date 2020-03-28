@@ -49,7 +49,7 @@ public class MyBinarySearchTree {
 
     public void countNodeWithOutLeftChild(TreeNode root) {
 
-        if (root == null) {
+        if (root == null)
 
             return;
 
@@ -87,17 +87,17 @@ public class MyBinarySearchTree {
 
         }
 
-        public void printLeftTree (TreeNode root){
+    public void printLeftTree(TreeNode root) {
 
-            if (root == null)
+        if (root == null)
 
-                return;
+            return;
 
-            q.add(root);
+        q.add(root);
 
-            q.add(null);
+        q.add(null);
 
-            while (q.size() > 0) {
+        while (q.size() > 0) {
 
                 TreeNode temp = q.peek();
 
@@ -138,5 +138,4 @@ public class MyBinarySearchTree {
             printLeftTree(root);
 
         }
-    }
 }
